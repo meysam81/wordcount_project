@@ -1,0 +1,12 @@
+<html>
+  <body>
+    <h1>WORD COUNT</h1>
+    {% block count %}
+    <form action ="{% url 'count' %}">
+      <textarea cols = "100" rows = "5" name = "fulltext"></textarea>
+      <br/>
+      <input type = "submit" value = "Count!"/>
+    </form>
+    {% endblock %}
+  </body>
+</html>

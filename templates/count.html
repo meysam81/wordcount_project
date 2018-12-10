@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block count %}
+<h2>COUNT</h2>
+<h3>Result:</h3>
+<ul>
+  {% for i, j in result %}
+  <li style = "display: block;width: 15%;float: left;">{{ i }}: {{ j }}</li>
+  {% endfor %}
+</ul>
+{% endblock %}
