@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block count %}
 <h2>COUNT</h2>
+<button><a href = "{% url 'index' %}">Start Over</a></button>
 <h3>Result:</h3>
 <ul>
   {% for i, j in result %}
